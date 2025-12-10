@@ -41,17 +41,11 @@ body {
     color: #ffd803;
 }
 
-/* HERO */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 50px;
+/* HERO TANPA GAMBAR */
+.hero.no-img {
+    text-align: center;
+    padding: 80px 50px;
     background: #fffffe;
-}
-
-.hero-text {
-    max-width: 50%;
 }
 
 .hero-text h1 {
@@ -116,16 +110,6 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-img {
-        width: 90%;
-        margin-top: 25px;
-    }
-
     .cards {
         flex-direction: column;
         align-items: center;
@@ -133,5 +117,9 @@ footer {
 
     .card {
         width: 90%;
+    }
+
+    .hero.no-img {
+        padding: 60px 20px;
     }
 }
